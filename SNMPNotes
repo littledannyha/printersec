@@ -1,0 +1,61 @@
+Simple Network Management Protocol
+
+manager-agent protocol
+	agents are remote devices on the network	
+		switches, generators, printers, routers, etc.
+
+setup
+	configure agent with managers IP address
+	compile agent's Management Information Base (MIB) into the manager
+		MIBs tell the manager about things like toner levels in printers or temperature in generators
+
+
+SNMP elements are represented using Object Identifiers(OID)
+	strings of dot seperated numbers
+	each number adds detail (like in ip addresses - first number is a category, 2nd number is specifics)
+	example OID - "1.3.6.1.4.1.2682.1.2.102"
+	1.3.6.1.4.1... means enterprise SNMP equipment
+	subsequent numbers 
+		mean DPS Telecom (manufacturer)
+		"Alarm monitoring equipment"
+		RTU
+		Alarm point 2
+
+SNMP messages
+	TRAP, GET, GET-NEXT, GET-RESPONSE, and SET
+	used to communicate btwn. agent and manager
+
+	TRAPs
+		alert messages used to report happenings
+		give manager a bigger picture of the whole network
+		ex. industrial fridge sends TRAP when temperature gets too high
+
+	GET
+		allows manager to ask agent for status without having to wait for a trap
+		lets manager tell if agent is still online
+
+
+	GET-RESPONSE
+		agent sends back this message in response to the GET request
+	
+	GET-NEXT
+		if manager needs additional info after agent sends GET-RESPONSE, it sends this message
+		can send as many times as needed to get all the data
+
+	SET
+		some agents have control relays and other things that can be controlled by manager
+		state of these things can be changed using the SET message
+		targets a specific OID
+
+
+versions
+	v1
+		workstation that hosts the network management app
+		polls management agents for information and provides control info to agents
+		provides info contained in the MIB to management applications and may accept control information
+	v2
+		manager to manager communication to support multiple / distributed managers and mid-level managers.
+		better security (known as "Secure SNMP") by specifying three layers of security.
+		improved efficiency and performance through the addition of bulk transfers of data.
+	v3
+		includes encryption

@@ -1,0 +1,33 @@
+useful URLs
+----------------------
+PJL basic exploit tutorial
+	http://hackonadime.blogspot.ro/2011/12/hacking-printers-pjl-basics.html
+PJL manual
+	http://h20565.www2.hp.com/hpsc/doc/public/display?docId=emr_na-bpl13208
+PJL injection script (I think)
+	https://packetstormsecurity.com/files/103778/hpjetdirect-exec.rb.txt
+SNMP tutorial
+	http://www.dpstele.com/snmp/tutorial-what-is.php
+SNMP attacks
+	http://home.cyber.ee/ahtbu/CDS2011/MaunoPihelgasSlides.pdf
+	https://www.sans.org/security-resources/idfaq/snmp.php
+
+Find more on SNMP attacks
+
+
+presentations
+----------------------
+http://ids.cs.columbia.edu/sites/default/files/CuiPrintMeIfYouDare.pdf
+http://andreicostin.com/papers/Conf%20-%20HashDays%20-%202011%20-%20Lucerne%20-%20AndreiCostin_HackingPrinters.pdf
+http://archive.hack.lu/2010/Costin-HackingPrintersForFunAndProfit-slides.pdf
+https://www.hackinparis.com/sites/hackinparis.com/files/DeralHeilandandPeterArzamendi.pdf
+
+news articles
+----------------------
+http://www.extremetech.com/computing/106945-tens-of-millions-of-hp-laserjet-printers-vulnerable-to-hacking
+http://www.computerworld.com/article/2473668/cybercrime-hacking/pwning-printers--backdoor-in-samsung-printers-via-hard-coded-admin-account.html
+
+
+interesting stuff to look at later
+----------------------
+https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Grossman.pdf

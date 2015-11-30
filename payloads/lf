@@ -1,0 +1,1 @@
+echo -en "\x0a" | xclip -selection c.

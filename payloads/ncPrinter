@@ -1,0 +1,1 @@
+nc -v -v $(cat printerURL) 9100

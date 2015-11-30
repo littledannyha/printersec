@@ -1,0 +1,21 @@
+2 models 
+	HP laserjet P2015
+	HP Photosmart D110 series
+
+admin panel
+	no password - D'OH
+
+nc dos
+	having an open nc session with the printer will prevent others from printing over jetdirect
+	works on home computer
+
+PJL exploit
+	directory traversal allowed by PJL commands
+
+hard drives exploits
+	virtual hard drive stored in memory
+	for physical hard drives, would be much easier
+	removable RAM
+
+bypassing authentication
+	sending straight to jetdirect

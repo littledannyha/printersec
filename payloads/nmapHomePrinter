@@ -1,0 +1,23 @@
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2015-11-26 22:36 EST
+Nmap scan report for 192.168.1.102
+Host is up (0.057s latency).
+Not shown: 985 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+631/tcp  open  ipp
+6839/tcp open  unknown
+7435/tcp open  unknown
+8080/tcp open  http-proxy
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9110/tcp open  unknown
+9111/tcp open  DragonIDSConsole
+9220/tcp open  unknown
+9290/tcp open  unknown
+9500/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 2.63 seconds

